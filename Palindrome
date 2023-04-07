@@ -14,7 +14,7 @@ int main()
         }
         for (col = 0; col < row + 1; col++)
         {
-            cout << row + 1; //<< "*";    //  we don't need in the end of start so
+            cout << row + 1;                                                 //<< "*";    //  we don't need in the end of start so
             if (col != row)
             {
                 cout << "*";
