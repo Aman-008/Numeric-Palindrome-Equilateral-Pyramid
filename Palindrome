@@ -3,21 +3,27 @@ using namespace std;
 
 int main()
 {
-    int n;
-    cin >> n;
-    for (int row = 0; row < n; row++)
+    int row, col, num;
+    cin >> num;
+
+    for (row = 0; row < num; row++)
     {
-        int col = 0;
+        for (col = 0; col < num + 3 - row; col++)
+        {
+            cout << "*";
+        }
         for (col = 0; col < row + 1; col++)
         {
-            cout << col + 1;
+            cout << row + 1; //<< "*";    //  we don't need in the end of start so
+            if (col != row)
+            {
+                cout << "*";
+            }
         }
-        col = col - 1;
-        for (int col = row; col >= 1; col = col - 1)
+        for (col = 0; col < num + 3 - row; col++)
         {
-            cout << col;
+            cout << "*";
         }
-
         cout << endl;
     }
 
